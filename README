@@ -1,0 +1,35 @@
+Foram dados os primeiros passos na tradução do Rivendell. Foi usado o qt-linguist, ferramenta para tradução de alguns programas que utilizam a interface gráfica "qt". Graças as recomendações de Fred Gleason em http://rivendell.tryphon.org/wiki/index.php/Translations .
+
+
+O que há:
+
+. Trabalho em cima da fonte versão 1.2.2
+. Tradução de todos as linhas possíveis e revisão para encaixamento nas "boxes " (muitas vezes tive que abreviar e/ou trocar palavras para não ter que mexer no tamanho das caixas de diálogos)
+. Foi criado um phrase book do Rivendell br, daí os termos que foram usados e que coincidem em diferentes módulos, são sugeridos automaticamente pelo qt-linguist.
+
+
+O que falta:
+
+. Revisão de termos polêmicos e/ou estranhos (Estamos levantando no dia a dia da Rádio UFSCar, as palavras que os usuários não se adapatam (inclusive, vamos contrubuir aí também galera...)
+. Encontrar um jeito rápido de adaptar para as novas versões (apesar de que usando em versões mais novas - testado na 1.5.2 - não houveram problemas, só a falta dos novos termos de novas 
+funções
+. Descobrir e Arrumar algumas partes que estranhamente não foram traduzidas (principalmente do arquivo librd.ts )
+. Soulcionar problemas com acentos (algumas partes, os acentos aparecem zuados e em outras não...novamente, quem puder ajudar aqui...)
+. Enviar para o Fred Gleason e pedir a inclusão no svn. (daí,  nas próximas versões oficiais, os módulos já estarão traduzidos ao serem instaladas numa máquina com váriável de língua pt_BR)
+
+Como fazer para utilizar o Rivendell em Portugês do Brasil:
+
+. Descompactar os arquivos ".qm" [1] e os copiá-los para a pasta /usr/local/share/rivendell ( a partir da versão 1.0 )  e na /usr/local/sahre/srlabs (nas anterirores) . Faça isso como root.
+. Certifique-se que sua variável de língua é pt_BR através do comando:
+  
+       echo $LANG 
+ 
+
+Se não for, faça :
+
+       export LANG=pt_BR.UTF-8
+
+
+Daniel Roviriego - 19/1/10
+______________________________________________________________________________________________________
+
